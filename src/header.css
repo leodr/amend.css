@@ -1,8 +1,8 @@
 header {
-    @apply bg-gray-50 col-span-full text-center py-12 mb-12;
+    @apply bg-gray-50 col-span-full text-center py-8 mb-12  border-b;
 
     & h1 {
-        @apply font-black tracking-tight;
+        @apply font-extrabold tracking-tight text-5xl m-0;
     }
 
     & img {
