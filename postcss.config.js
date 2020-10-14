@@ -9,7 +9,7 @@ module.exports = {
         postcssImport(),
         postcssNesting(),
         tailwindCSS(),
-        postcssPresetEnv(),
+        postcssPresetEnv({ stage: 1 }),
         process.env.NODE_ENV === "production" &&
             cssnano({
                 presets: [
