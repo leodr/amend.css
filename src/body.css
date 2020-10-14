@@ -1,21 +1,40 @@
+.highlight {
+    @apply rounded py-0.5 px-1;
+}
+
 body {
-    @apply prose-lg max-w-none;
+    @apply prose sm:prose-lg max-w-none;
     @apply bg-gray-100;
     @apply grid;
 
-    display: grid;
-    grid-template-columns: 1fr max(12px, 6%) min(65ch, auto) max(12px, 6%) 1fr;
+    grid-template-columns: 1fr 12px auto 12px 1fr;
+
+    @screen sm {
+        grid-template-columns: 1fr max(12px, 3%) min(65ch, 100%) max(12px, 3%) 1fr;
+    }
+
+    & pre {
+        @apply col-span-full rounded-none;
+
+        @screen sm {
+            @apply col-start-3 col-span-1 -mx-6 rounded-md;
+        }
+    }
 
     & > * {
         grid-column: 3 / span 1;
     }
 
     & img {
-        @apply col-start-2 col-span-3 w-full rounded shadow-2xl;
+        @apply col-start-2 col-span-3 w-full rounded-none shadow-lg;
+
+        @screen sm {
+            @apply rounded-md;
+        }
     }
 
     & mark {
-        @apply bg-yellow-200 py-px px-1 rounded;
+        @apply bg-yellow-200 text-yellow-800 highlight;
     }
 
     & a {
@@ -23,10 +42,12 @@ body {
     }
 
     & code {
-        @apply text-pink-600 bg-gray-200 rounded px-1 py-px;
+        @apply text-pink-600 bg-gray-200 highlight;
     }
 
     & kbd {
-        @apply text-indigo-900 bg-gray-200;
+        @apply text-purple-900 bg-purple-100 highlight border border-b-2 border-purple-200;
+
+        font-size: 88%;
     }
 }
