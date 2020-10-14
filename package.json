@@ -1,0 +1,30 @@
+{
+    "name": "quicket.css",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "Leonhard Driesch",
+    "scripts": {
+        "build": "run-p build-dev build-prod",
+        "build-dev": "cross-env NODE_ENV=development postcss src/index.css -o dist/index.css",
+        "build-prod": "cross-env NODE_ENV=production postcss src/index.css -o dist/index.min.css",
+        "format": "prettier . --write",
+        "watch": "postcss src/index.css -o dist/index.css -w"
+    },
+    "prettier": {
+        "tabWidth": 4
+    },
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.2.0",
+        "cross-env": "^7.0.2",
+        "cssnano": "^4.1.10",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.1.1",
+        "postcss-cli": "^8.1.0",
+        "postcss-import": "^12.0.1",
+        "postcss-nesting": "^7.0.1",
+        "postcss-preset-env": "^6.7.0",
+        "prettier": "^2.1.2",
+        "prettier-plugin-packagejson": "^2.2.6",
+        "tailwindcss": "^1.9.1"
+    }
+}

@@ -1,0 +1,11 @@
+header {
+    @apply bg-gray-50 col-span-full text-center py-12 mb-12;
+
+    & h1 {
+        @apply font-black tracking-tight;
+    }
+
+    & img {
+        @apply max-h-60 object-cover w-full -mb-12;
+    }
+}

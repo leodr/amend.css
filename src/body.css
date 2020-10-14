@@ -1,0 +1,32 @@
+body {
+    @apply prose-lg max-w-none;
+    @apply bg-gray-100;
+    @apply grid;
+
+    display: grid;
+    grid-template-columns: 1fr max(12px, 6%) min(65ch, auto) max(12px, 6%) 1fr;
+
+    & > * {
+        grid-column: 3 / span 1;
+    }
+
+    & img {
+        @apply col-start-2 col-span-3 w-full rounded shadow-2xl;
+    }
+
+    & mark {
+        @apply bg-yellow-200 py-px px-1 rounded;
+    }
+
+    & a {
+        @apply no-underline text-indigo-500 font-semibold;
+    }
+
+    & code {
+        @apply text-pink-600 bg-gray-200 rounded px-1 py-px;
+    }
+
+    & kbd {
+        @apply text-indigo-900 bg-gray-200;
+    }
+}
