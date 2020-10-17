@@ -1,0 +1,53 @@
+details {
+    @apply relative text-gray-500 -mx-bleed px-bleed;
+
+    & + details {
+        &::after {
+            @apply absolute inset-y-0 inset-x-bleed border-t border-gray-200 pointer-events-none;
+
+            z-index: -1;
+
+            content: "";
+        }
+    }
+
+    &[open] {
+        @apply pb-4;
+
+        & summary {
+            &::after {
+                --rotate: 180deg;
+            }
+        }
+    }
+
+    & summary {
+        @apply -mx-bleed px-bleed pr-8;
+
+        @screen sm {
+            @apply -mx-3 px-3 pr-8;
+        }
+
+        @apply relative block list-none py-3 cursor-pointer text-gray-800 font-medium;
+        @apply transition-colors duration-75;
+        @apply bg-opacity-75 focus:outline-none focus:bg-gray-200 hover:bg-gray-200;
+
+        @screen sm {
+            @apply rounded-lg;
+        }
+
+        &::after {
+            --rotate: 0deg;
+
+            @apply absolute right-3 top-1/2 w-5 h-5;
+
+            background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22currentColor%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M5.293%207.293a1%201%200%20011.414%200L10%2010.586l3.293-3.293a1%201%200%20111.414%201.414l-4%204a1%201%200%2001-1.414%200l-4-4a1%201%200%20010-1.414z%22%20clip-rule%3D%22evenodd%22%20%2F%3E%0A%3C%2Fsvg%3E");
+            content: "";
+            transform: translateY(-50%) rotate(var(--rotate));
+        }
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+}
