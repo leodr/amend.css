@@ -23,6 +23,18 @@ module.exports = {
             boxShadow: (theme) => ({
                 "outline-indigo": `0 0 0 3px ${theme("colors.indigo.500")}80`,
             }),
+            margin: {
+                "-bleed": "calc(var(--bleed) * -1)",
+            },
+            padding: {
+                bleed: "var(--bleed)",
+            },
+            height: {
+                130: "32.5rem",
+            },
+            inset: {
+                bleed: "var(--bleed)",
+            },
         },
         customForms: (theme) => ({
             default: {

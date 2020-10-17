@@ -4,8 +4,11 @@
 
 @import url("https://rsms.me/inter/inter.css");
 
+@import "./config.css";
+
 @import "./jetbrainsMono.css";
 @import "./body.css";
 @import "./header.css";
 @import "./forms.css";
 @import "./definitionList.css";
+@import "./foreignContent.css";
