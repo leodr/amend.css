@@ -1,0 +1,14 @@
+header {
+    @apply bg-white col-span-full text-center py-8 mb-8 border-gray-200 border-b;
+
+    & > *:first-child {
+    }
+
+    & h1 {
+        @apply font-extrabold tracking-tight m-0;
+    }
+
+    & img {
+        @apply max-h-60 object-cover w-full -mb-12;
+    }
+}
