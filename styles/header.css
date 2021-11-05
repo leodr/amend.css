@@ -1,14 +1,50 @@
 header {
-    @apply bg-white col-span-full text-center py-8 mb-8 border-gray-200 border-b;
+    @apply bg-white text-center px-6 py-4 mb-8 shadow-sm -mx-view;
 
-    & > *:first-child {
+    @apply flex flex-col;
+
+    @screen sm {
+        @apply flex-row justify-between items-center;
+        @apply sticky top-0;
     }
 
     & h1 {
-        @apply font-extrabold tracking-tight m-0;
+        @apply m-0 p-0 text-xl;
     }
 
     & img {
-        @apply max-h-60 object-cover w-full -mb-12;
+        @apply rounded-none w-auto h-6 shadow-none m-0 p-0 mb-4;
+
+        @screen sm {
+            @apply mb-0;
+        }
+    }
+
+    & nav {
+        @apply flex h-full space-x-6;
+
+        @screen sm {
+            @apply ml-auto;
+        }
+
+        & a {
+            @apply flex items-center justify-center;
+            @apply h-full;
+            @apply text-gray-500 font-medium transition-colors duration-75;
+            @apply hover:text-gray-700 focus:outline-none focus:text-gray-700;
+        }
+    }
+
+    & ul {
+        @apply flex m-0 p-0 space-x-6;
+
+        & li {
+            @apply p-0 m-0;
+
+            &::before,
+            &::after {
+                content: unset;
+            }
+        }
     }
 }

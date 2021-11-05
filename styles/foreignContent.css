@@ -10,7 +10,11 @@ iframe {
 }
 
 iframe {
-    @apply h-130;
+    @apply h-96;
+
+    @screen sm {
+        @apply h-130;
+    }
 }
 
 audio {

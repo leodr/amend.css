@@ -1,5 +1,9 @@
 label {
-    @apply text-sm leading-5 font-medium text-gray-700;
+    @apply text-sm leading-5 font-medium text-gray-700 block mt-6 mb-2;
+
+    & > input[type="radio"] + * {
+        @apply -mt-4;
+    }
 }
 
 input {
@@ -25,18 +29,55 @@ select[multiple] {
 input[type="checkbox"] {
     @apply form-checkbox text-indigo-500;
     @apply focus:shadow-outline-indigo focus:border-indigo-500;
+    @apply mr-1;
 }
 
 input[type="radio"] {
     @apply form-radio text-indigo-500;
     @apply focus:shadow-outline-indigo focus:border-indigo-500;
+    @apply mr-1;
 }
 
 button,
 input[type="button"] {
     @apply py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out;
+
+    & + button {
+        @apply ml-2;
+    }
 }
 
 button[disabled] {
     @apply hover:bg-indigo-600 opacity-50;
+}
+
+fieldset {
+    @apply mt-8;
+    @apply border-t border-gray-200;
+
+    & label {
+        @apply my-1;
+    }
+
+    & > label {
+        @apply mt-6 mb-2;
+    }
+
+    & legend {
+        @apply font-medium text-gray-800 pr-4;
+    }
+
+    & p {
+        @apply text-gray-500;
+
+        font-size: 80%;
+    }
+
+    & p:first-of-type {
+        @apply mt-1;
+    }
+
+    & p:last-of-type {
+        @apply mb-1;
+    }
 }

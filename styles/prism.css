@@ -83,7 +83,7 @@ pre[class*="language-"] {
 
 .token.atrule,
 .token.keyword {
-    @apply text-pink-400;
+    @apply text-pink-300;
 }
 
 .token.function {

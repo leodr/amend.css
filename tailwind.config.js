@@ -13,7 +13,10 @@ module.exports = {
         extendedSpacingScale: true,
         extendedFontSizeScale: true,
     },
-    purge: ["./website/**/*", "./src/**/*"],
+    purge: {
+        layers: ["utilities"],
+        content: ["./website/**/*", "./src/**/*"],
+    },
     corePlugins: {
         float: false,
         boxSizing: false,
@@ -48,6 +51,7 @@ module.exports = {
             }),
             margin: {
                 "-bleed": "calc(var(--bleed) * -1)",
+                "-view": "calc(0px - (50vw - 50%))",
             },
             padding: {
                 bleed: "var(--bleed)",

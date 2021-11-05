@@ -1,6 +1,10 @@
 details {
     @apply relative text-gray-500 -mx-bleed px-bleed;
 
+    & p {
+        @apply m-0 p-0;
+    }
+
     & + details {
         &::after {
             @apply absolute inset-y-0 inset-x-bleed border-t border-gray-200 pointer-events-none;
@@ -30,7 +34,7 @@ details {
 
         @apply relative block list-none py-3 cursor-pointer text-gray-800 font-medium;
         @apply transition-colors duration-75;
-        @apply bg-opacity-75 focus:outline-none focus:bg-gray-200 hover:bg-gray-200;
+        @apply bg-opacity-75 focus:outline-none focus:bg-gray-200;
 
         @screen sm {
             @apply rounded-lg;

@@ -1,5 +1,5 @@
 footer {
-    @apply col-span-full bg-gray-100 text-center py-12 space-y-8 text-base text-gray-500 mt-8;
+    @apply -mx-view bg-gray-100 text-center py-12 space-y-8 text-base text-gray-500 mt-8;
 
     & ul {
         @apply m-0 p-0;
@@ -18,7 +18,8 @@ footer {
     }
 
     & a {
-        @apply text-gray-500 font-medium;
+        color: theme("colors.gray.500") !important;
+        font-weight: 500 !important;
     }
 
     & svg {
