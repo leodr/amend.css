@@ -1,33 +1,27 @@
 header {
-    @apply bg-white text-center px-6 py-4 mb-8 shadow-sm -mx-view;
+    @apply bg-white text-center px-6 py-4 mb-8 shadow-sm -mx-view z-20;
 
     @apply flex flex-col;
 
-    @screen sm {
-        @apply flex-row justify-between items-center;
-        @apply sticky top-0;
-    }
+    @apply sm:flex-row sm:justify-between sm:items-center;
+    @apply sm:sticky sm:top-0;
 
-    & h1 {
+    h1 {
         @apply m-0 p-0 text-xl;
     }
 
-    & img {
+    img {
         @apply rounded-none w-auto h-6 shadow-none m-0 p-0 mb-4;
 
-        @screen sm {
-            @apply mb-0;
-        }
+        @apply sm:mb-0;
     }
 
-    & nav {
+    nav {
         @apply flex h-full space-x-6;
 
-        @screen sm {
-            @apply ml-auto;
-        }
+        @apply sm:ml-auto;
 
-        & a {
+        a {
             @apply flex items-center justify-center;
             @apply h-full;
             @apply text-gray-500 font-medium transition-colors duration-75;
@@ -35,10 +29,10 @@ header {
         }
     }
 
-    & ul {
-        @apply flex m-0 p-0 space-x-6;
+    ul {
+        @apply flex m-0 p-0 space-x-6 list-none;
 
-        & li {
+        li {
             @apply p-0 m-0;
 
             &::before,

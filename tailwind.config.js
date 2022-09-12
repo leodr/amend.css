@@ -1,22 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-    future: {
-        removeDeprecatedGapUtilities: true,
-        purgeLayersByDefault: true,
-        defaultLineHeights: true,
-        standardFontWeights: true,
-    },
-    experimental: {
-        applyComplexClasses: true,
-        uniformColorPalette: true,
-        extendedSpacingScale: true,
-        extendedFontSizeScale: true,
-    },
-    purge: {
-        layers: ["utilities"],
-        content: ["./website/**/*", "./src/**/*"],
-    },
+    content: ["./playground/**/*.html"],
     corePlugins: {
         float: false,
         boxSizing: false,
@@ -78,6 +63,6 @@ module.exports = {
     },
     plugins: [
         require("@tailwindcss/typography")({ modifiers: ["lg"] }),
-        require("@tailwindcss/custom-forms"),
+        require("@tailwindcss/forms"),
     ],
 };

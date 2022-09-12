@@ -55,7 +55,7 @@ fieldset {
     @apply mt-8;
     @apply border-t border-gray-200;
 
-    & label {
+    label {
         @apply my-1;
     }
 
@@ -63,21 +63,21 @@ fieldset {
         @apply mt-6 mb-2;
     }
 
-    & legend {
+    legend {
         @apply font-medium text-gray-800 pr-4;
     }
 
-    & p {
+    p {
         @apply text-gray-500;
 
         font-size: 80%;
     }
 
-    & p:first-of-type {
+    p:first-of-type {
         @apply mt-1;
     }
 
-    & p:last-of-type {
+    p:last-of-type {
         @apply mb-1;
     }
 }

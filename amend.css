@@ -483,10 +483,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   color: #a0aec0;
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #a0aec0;
-}
-
 input::placeholder,
 textarea::placeholder {
   color: #a0aec0;
@@ -1193,11 +1189,6 @@ video {
   opacity: 1;
 }
 
-.form-input:-ms-input-placeholder {
-  color: #a0aec0;
-  opacity: 1;
-}
-
 .form-input::placeholder {
   color: #a0aec0;
   opacity: 1;
@@ -1226,11 +1217,6 @@ video {
 }
 
 .form-textarea::-moz-placeholder {
-  color: #a0aec0;
-  opacity: 1;
-}
-
-.form-textarea:-ms-input-placeholder {
   color: #a0aec0;
   opacity: 1;
 }
@@ -1343,7 +1329,6 @@ video {
   background-origin: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   flex-shrink: 0;
   height: 1em;
@@ -1391,7 +1376,6 @@ video {
   background-origin: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   flex-shrink: 0;
   border-radius: 100%;
@@ -2156,8 +2140,6 @@ header {
 
     justify-content: space-between;
 
-    position: -webkit-sticky;
-
     position: sticky;
 
     top: 0
@@ -2296,11 +2278,6 @@ input::-moz-placeholder {
   opacity: 1;
 }
 
-input:-ms-input-placeholder {
-  color: #a0aec0;
-  opacity: 1;
-}
-
 input::placeholder {
   color: #a0aec0;
   opacity: 1;
@@ -2340,11 +2317,6 @@ textarea {
 }
 
 textarea::-moz-placeholder {
-  color: #a0aec0;
-  opacity: 1;
-}
-
-textarea:-ms-input-placeholder {
   color: #a0aec0;
   opacity: 1;
 }
@@ -2490,7 +2462,6 @@ input[type="checkbox"] {
   background-origin: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   flex-shrink: 0;
   height: 1em;
@@ -2555,7 +2526,6 @@ input[type="radio"] {
   background-origin: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   flex-shrink: 0;
   border-radius: 100%;
@@ -3087,7 +3057,6 @@ pre[class*="language-"] {
     -o-tab-size: 4;
        tab-size: 4;
   -webkit-hyphens: none;
-      -ms-hyphens: none;
           hyphens: none;
 }
 
@@ -3223,7 +3192,6 @@ pre.line-numbers > code {
   border-right: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 

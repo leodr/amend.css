@@ -1,11 +1,11 @@
 details {
     @apply relative text-gray-500 -mx-bleed px-bleed;
 
-    & p {
+    p {
         @apply m-0 p-0;
     }
 
-    & + details {
+    + details {
         &::after {
             @apply absolute inset-y-0 inset-x-bleed border-t border-gray-200 pointer-events-none;
 
@@ -18,27 +18,23 @@ details {
     &[open] {
         @apply pb-4;
 
-        & summary {
+        summary {
             &::after {
                 --rotate: 180deg;
             }
         }
     }
 
-    & summary {
+    summary {
         @apply -mx-bleed px-bleed pr-8;
 
-        @screen sm {
-            @apply -mx-3 px-3 pr-8;
-        }
+        @apply sm:-mx-3 sm:px-3 sm:pr-8;
 
         @apply relative block list-none py-3 cursor-pointer text-gray-800 font-medium;
         @apply transition-colors duration-75;
         @apply bg-opacity-75 focus:outline-none focus:bg-gray-200;
 
-        @screen sm {
-            @apply rounded-lg;
-        }
+        @apply sm:rounded-lg;
 
         &::after {
             --rotate: 0deg;

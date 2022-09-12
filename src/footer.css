@@ -1,10 +1,10 @@
 footer {
     @apply -mx-view bg-gray-100 text-center py-12 space-y-8 text-base text-gray-500 mt-8;
 
-    & ul {
+    ul {
         @apply m-0 p-0;
 
-        & li {
+        li {
             @apply m-0 p-0;
 
             &:before {
@@ -17,12 +17,12 @@ footer {
         @apply flex items-center justify-center space-x-8;
     }
 
-    & a {
+    a {
         color: theme("colors.gray.500") !important;
         font-weight: 500 !important;
     }
 
-    & svg {
+    svg {
         width: 24px;
         height: 24px;
     }

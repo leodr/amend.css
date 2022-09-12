@@ -1,0 +1,13 @@
+{
+    "name": "playground",
+    "version": "0.0.0",
+    "private": true,
+    "source": "index.html",
+    "scripts": {
+        "build": "parcel build",
+        "dev": "parcel"
+    },
+    "devDependencies": {
+        "parcel": "^2.7.0"
+    }
+}

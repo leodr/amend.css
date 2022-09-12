@@ -4,17 +4,13 @@ iframe {
     @apply -mx-bleed max-w-none shadow-lg rounded-none my-8;
     width: calc(var(--bleed) * 2 + 100%);
 
-    @screen sm {
-        @apply rounded-md;
-    }
+    @apply sm:rounded-md;
 }
 
 iframe {
     @apply h-96;
 
-    @screen sm {
-        @apply h-130;
-    }
+    @apply sm:h-130;
 }
 
 audio {
@@ -24,21 +20,19 @@ audio {
 figure {
     @apply -mx-bleed text-center;
 
-    & img,
-    & video,
-    & iframe {
+    img,
+    video,
+    iframe {
         @apply mx-0 w-full my-0;
     }
 
-    & audio {
+    audio {
         @apply px-bleed;
     }
 
-    & figcaption {
+    figcaption {
         @apply px-4;
 
-        @screen sm {
-            @apply px-8;
-        }
+        @apply sm:px-8;
     }
 }

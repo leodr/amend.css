@@ -1,0 +1,7 @@
+body {
+    pre {
+        @apply rounded-none -mx-bleed;
+
+        @apply sm:rounded-md;
+    }
+}
