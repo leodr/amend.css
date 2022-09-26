@@ -1,9 +1,9 @@
 dl {
-    dt {
-        @apply font-semibold text-gray-800;
-    }
+  dt {
+    @apply font-semibold text-gray-800;
+  }
 
-    dd {
-        @apply mb-4 italic;
-    }
+  dd {
+    @apply mb-4 italic;
+  }
 }

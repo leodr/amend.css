@@ -33,14 +33,16 @@ jobs:
       - name: Build css
         run: npm ci && npm run build-css
       - name: Build playground
-        run: cp amend.css playground/amend.css && cd playground && npm ci && npm run build
+        run:
+          cp amend.css playground/amend.css && cd playground && npm ci && npm
+          run build
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './playground/dist'
+          path: "./playground/dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

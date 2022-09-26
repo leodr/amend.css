@@ -1,7 +1,7 @@
 :root {
-    --bleed: 1rem;
+  --bleed: 1rem;
 
-    @screen sm {
-        --bleed: 1.5rem;
-    }
+  @screen sm {
+    --bleed: 1.5rem;
+  }
 }

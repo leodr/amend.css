@@ -1,52 +1,52 @@
 progress {
-    @apply w-full rounded-full h-2 overflow-hidden appearance-none bg-indigo-200 relative;
+  @apply w-full rounded-full h-2 overflow-hidden appearance-none bg-indigo-200 relative;
 
-    &::-webkit-progress-bar {
-        @apply bg-transparent;
-    }
+  &::-webkit-progress-bar {
+    @apply bg-transparent;
+  }
 }
 
 progress:indeterminate {
-    &::before {
-        @apply absolute inset-0;
-        content: "";
-        z-index: 100;
+  &::before {
+    @apply absolute inset-0;
+    content: "";
+    z-index: 100;
 
-        background-image: linear-gradient(
-            90deg,
-            theme("colors.indigo.600") 50%,
-            transparent 50%
-        );
+    background-image: linear-gradient(
+      90deg,
+      theme("colors.indigo.600") 50%,
+      transparent 50%
+    );
 
-        animation: progress-bar-background-animation 2000ms linear infinite;
-    }
+    animation: progress-bar-background-animation 2000ms linear infinite;
+  }
 
-    &::-webkit-progress-bar {
-        @apply hidden;
-    }
+  &::-webkit-progress-bar {
+    @apply hidden;
+  }
 
-    &::-webkit-progress-value {
-        @apply hidden;
-    }
+  &::-webkit-progress-value {
+    @apply hidden;
+  }
 }
 
 progress[value] {
-    &::-webkit-progress-bar {
-        @apply bg-transparent;
-    }
+  &::-webkit-progress-bar {
+    @apply bg-transparent;
+  }
 
-    &::-webkit-progress-value {
-        @apply bg-indigo-600 duration-700 ease-in-out;
-        transition-property: width;
-    }
+  &::-webkit-progress-value {
+    @apply bg-indigo-600 duration-700 ease-in-out;
+    transition-property: width;
+  }
 }
 
 @keyframes progress-bar-background-animation {
-    0% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(-100%);
+  }
 
-    100% {
-        transform: translateX(100%);
-    }
+  100% {
+    transform: translateX(100%);
+  }
 }

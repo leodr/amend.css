@@ -1,7 +1,7 @@
 body {
-    pre {
-        @apply rounded-none -mx-bleed;
+  pre {
+    @apply rounded-none -mx-bleed;
 
-        @apply sm:rounded-md;
-    }
+    @apply sm:rounded-md;
+  }
 }

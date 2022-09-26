@@ -1,26 +1,26 @@
 body {
-    mark {
-        @apply bg-yellow-200 text-yellow-800 rounded py-0.5 px-1;
+  mark {
+    @apply bg-yellow-200 text-yellow-800 rounded py-0.5 px-1;
+  }
+
+  a {
+    @apply no-underline text-indigo-500 font-semibold;
+  }
+
+  :not(pre) > code {
+    @apply text-pink-600 bg-gray-200 rounded py-0.5 px-1;
+  }
+
+  kbd {
+    @apply text-purple-900 bg-purple-100 rounded py-0.5 px-1 border border-b-2 border-purple-200;
+
+    font-size: 88%;
+
+    svg {
+      margin-bottom: 2px;
+      height: 1em;
+      width: 1em;
+      display: inline;
     }
-
-    a {
-        @apply no-underline text-indigo-500 font-semibold;
-    }
-
-    :not(pre) > code {
-        @apply text-pink-600 bg-gray-200 rounded py-0.5 px-1;
-    }
-
-    kbd {
-        @apply text-purple-900 bg-purple-100 rounded py-0.5 px-1 border border-b-2 border-purple-200;
-
-        font-size: 88%;
-
-        svg {
-            margin-bottom: 2px;
-            height: 1em;
-            width: 1em;
-            display: inline;
-        }
-    }
+  }
 }
