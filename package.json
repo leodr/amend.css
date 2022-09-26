@@ -12,7 +12,7 @@
   "homepage": "https://leodr.github.io/amendcss",
   "repository": "github:leodr/amend.css",
   "license": "MIT",
-  "author": "Leonhard Driesch",
+  "author": "Leo Driesch <hi@leodriesch.com> (github.com/leodr)",
   "main": "./amend.css",
   "scripts": {
     "build-css": "postcss src/index.css -o amend.css --no-map --env production",
