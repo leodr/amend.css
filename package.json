@@ -1,8 +1,19 @@
 {
   "name": "amend.css",
   "version": "1.0.0",
+  "description": "A classless CSS stylesheet that makes vanilla HTML sites look good.",
+  "keywords": [
+    "classless",
+    "css",
+    "html",
+    "tailwindcss",
+    "stylesheet"
+  ],
+  "homepage": "https://leodr.github.io/amendcss",
+  "repository": "github:leodr/amend.css",
   "license": "MIT",
   "author": "Leonhard Driesch",
+  "main": "./amend.css",
   "scripts": {
     "build-css": "postcss src/index.css -o amend.css --no-map --env production",
     "watch-css": "postcss src/index.css -o playground/amend.css --watch",
